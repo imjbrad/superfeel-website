@@ -1,0 +1,132 @@
+.playlist-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s;
+
+  &.ready {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .playlist {
+
+    padding: 0;
+    list-style: none;
+
+    li {
+
+      .track-wrapper {
+        width: 100%;
+        overflow: auto;
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        color: $near-white;
+        font-size: 1em;
+        min-height: 62px;
+
+        &:first-child {
+          border-top: 1px solid $near-white;
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $near-white;
+        }
+
+        .play {
+
+          color: $near-white;
+          cursor: pointer;
+          font-size: 1.3em;
+
+          background: none;
+          background-size: contain;
+          background-repeat: no-repeat;
+          border: none;
+
+          padding: 0;
+          margin-right: 8px;
+
+          &:focus, &:active {
+            outline: none;
+            -webkit-appearance: none;
+            border: none;
+          }
+
+
+          &.ready_state, &.paused_state {
+            @extend .fa-play-circle;
+          }
+
+          &.loading_state {
+            @extend .fa-spinner;
+          }
+
+          &.playing_state {
+            @extend .fa-pause-circle;
+          }
+
+        }
+
+        .name {
+          font-family: "apercu_medium";
+          letter-spacing: .06em;
+          text-transform: uppercase;
+        }
+
+
+        .space{
+          flex-grow: 1;
+        }
+
+        .watch-video {
+          background-color: $faded-near-white;
+          padding:  8px 18px;
+          border-radius: 4px;
+          color: $near-white;
+          font-size: .65em;
+          margin-right: 8px;
+          text-decoration: none;
+
+          .label {
+            vertical-align: middle;
+          }
+
+          .play-video {
+            margin-left: 8px;
+          }
+
+
+          @media (max-width: 414px) {
+
+            padding:  0px;
+            background: none;
+
+            .label {
+              display: none;
+            }
+          }
+
+        }
+
+        &.not-available {
+
+          opacity: .3;
+
+          .play {
+            visibility: hidden;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+}
+
+#audioPlayer {
+  display: none;
+}
+

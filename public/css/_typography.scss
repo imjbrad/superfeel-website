@@ -1,0 +1,53 @@
+$fa-font-path: "../fonts";
+
+@import "variables";
+//@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+
+@font-face {
+  font-family: 'apercu';
+  src: url('../fonts/apercu/Apercu.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'apercu_bold';
+  src: url('../fonts/apercu/ApercuBold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'apercu_bold_italic';
+  src: url('../fonts/apercu/ApercuBoldItalic.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'apercu_medium';
+  src: url('../fonts/apercu/ApercuMedium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'apercu_mono';
+  src: url('../fonts/apercu/ApercuMono.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+
+  font-size: 15px;
+
+  @media (min-width: $small) {
+    font-size: 16px;
+  }
+
+}
+
+body {
+  font-family: 'apercu';
+}

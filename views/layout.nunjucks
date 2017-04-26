@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="components/jquery/dist/jquery.min.js"></script>
+
+  {% if ENV_DEVELOPMENT %}
+    <script src="http://localhost:35729/livereload.js"></script>
+  {% endif %}
+
+  <script type="text/javascript">
+    var $el;
+
+    function autoHeight(){
+      $el.css('height', 'auto');
+      var implicitHeight = $el.height();
+      $el.height(implicitHeight - 20);
+    }
+
+    function init(){
+      $el = $('.discog');
+      window.setTimeout(autoHeight, 0);
+      $(window).on('resize', autoHeight);
+    }
+
+    $(document).ready(init);
+  </script>
+
+</head>
+<body>
+  {% block content %}{% endblock %}
+</body>
+</html>

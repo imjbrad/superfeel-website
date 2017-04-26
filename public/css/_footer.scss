@@ -1,0 +1,21 @@
+$social-link-size: 3.5vw;
+
+footer {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+
+  .social-link {
+    width: $social-link-size;
+    height: $social-link-size;
+    border-radius: 50%;
+    border: 2px solid $sf-white;
+
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+
+  }
+}
