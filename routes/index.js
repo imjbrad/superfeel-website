@@ -4,7 +4,7 @@ var router = express.Router();
 function IndexView(req, res) {
 
   var context = {
-    title: 'Express',
+    title: 'Superfeel | Office Website',
     posts: [
       {
         image: "images/post-images/oath.jpg",

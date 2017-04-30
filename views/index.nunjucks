@@ -11,9 +11,9 @@
   <div class="music-container section-container">
     <div class="video-wrapper">
       <div class="gradient"></div>
-      <video src="images/bg-video.mp4" type="video/mp4" autoplay muted loop></video>
+      {#<video src="images/bg-video.gif" type="video/mp4" autoplay muted loop></video>#}
     </div>
-    <div class="discog"/>
+    <div class="discog">
       <div class="scroll-wrapper">
         <div class="padding"></div>
         {% for post in posts %}
@@ -31,12 +31,16 @@
       </div>
     </div>
   </div>
-
   <div class="bio-container section-container">
-    <div class="cover-photo-wrapper">
-    </div>
+    <div class="cover-photo-wrapper"></div>
     <div class="bio">
       After graduating from the Maryland Institute College of Art in 2016, Androu and Jordan moved to New York and started Superfeel as a mashup of their interests in graphic design, code, and pop. Stylish raps and sultry RnB cadences meet crisp, commercial pop hooks in Superfeel classics like “Automatic” and “That Guy”.
+      <div class="email-addresses">
+        <span class="email">General:<span class="address">isuperfeelyou@gmail.com</span></span>
+        <br>
+        <span class="email">Booking:<span class="address">greg@datatouring.com</span></span>
+      </div>
+      {#<img class="gif" src="images/bg-video2.gif"></img>#}
     </div>
   </div>
 </div>

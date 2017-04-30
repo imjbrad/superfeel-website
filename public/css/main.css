@@ -274,7 +274,6 @@ html, body {
 .bio {
   width: 40%;
   margin: 10vh auto;
-  margin-bottom: 20vh;
   font-size: 1.3vw;
   line-height: 1.8em; }
   @media (max-width: 768px) {
@@ -283,6 +282,20 @@ html, body {
       width: 70%;
       margin: 15vw auto;
       margin-bottom: 20vh; } }
+  .bio .gif {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 3vw; }
+  .bio .email-addresses {
+    margin-top: 1.3vw; }
+    .bio .email-addresses .email {
+      font-family: apercu_mono; }
+      .bio .email-addresses .email .address {
+        margin-left: 5px;
+        display: inline-block;
+        color: blue; }
 
 footer {
   position: fixed;
