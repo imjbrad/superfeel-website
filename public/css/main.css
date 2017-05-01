@@ -211,6 +211,9 @@ html, body {
     .discog .scroll-wrapper .padding {
       width: 10vw;
       flex: none; }
+    .discog .scroll-wrapper .post-link {
+      text-decoration: none;
+      cursor: pointer; }
     .discog .scroll-wrapper .post {
       width: 25vw;
       margin-right: 2.6vw;
@@ -237,7 +240,7 @@ html, body {
         .discog .scroll-wrapper .post > .info .title {
           font-size: 1.7em;
           font-family: "apercu_bold";
-          line-height: 1.1em;
+          line-height: 1.16em;
           width: 85%;
           margin-bottom: .5em; }
         .discog .scroll-wrapper .post > .info .cta {
