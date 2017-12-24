@@ -1,49 +1,28 @@
 {% extends 'layout.nunjucks' %}
 
 {% block content %}
-<div class="masthead">
-  <div class="masthead-contents">
-    <img class="logo" src="images/logo.png"/>
-  </div>
+<div class="background-video">
+  <video src="/images/bg_video.mp4" loop autoplay></video>
 </div>
 
 <div class="content-wrapper">
-  <div class="music-container section-container">
-    <div class="video-wrapper">
-      <div class="gradient"></div>
-      {#<video src="images/bg-video.gif" type="video/mp4" autoplay muted loop></video>#}
-    </div>
-    <div class="discog">
-      <div class="scroll-wrapper">
-        <div class="padding"></div>
-        {% for post in posts %}
-          <a class="post-link" href="{{ post.link }}" title="{{ post.title }}" target="_blank">
-            <div class="post">
-              <div class="album-cover">
-                <img src="{{ post.image }}">
-              </div>
-              <div class="info">
-                <div class="title">{{ post.title | safe }}</div>
-                <div class="cta">{{ post.type }}</div>
-              </div>
-            </div>
-          </a>
-        {% endfor %}
-        <div class="padding"></div>
-      </div>
+
+  <div class="centered">
+    <img class="logo" src="/images/logo.png" alt="Superfeel Logo">
+    <div class="links">
+      <a alt="Official Superfeel Facebook" href="https://www.smarturl.it/superfeel">LISTEN NOW</a>
+      <a alt="Instagram" href="https://www.instagram.com/realsuperfeel">INSTAGRAM</a>
     </div>
   </div>
-  <div class="bio-container section-container">
-    <div class="cover-photo-wrapper"></div>
-    <div class="bio">
-      After graduating from the Maryland Institute College of Art in 2016, Androu and Jordan moved to New York and started Superfeel as a mashup of their interests in graphic design, code, and pop. Stylish raps and sultry RnB cadences meet crisp, commercial pop hooks in Superfeel classics like “Automatic” and “That Guy”.
-      <div class="email-addresses">
-        <span class="email">General:<span class="address">isuperfeelyou@gmail.com</span></span>
-        <br>
-        <span class="email">Booking:<span class="address">greg@datatouring.com</span></span>
-      </div>
-      {#<img class="gif" src="images/bg-video2.gif"></img>#}
-    </div>
-  </div>
+
+  <footer>
+    <a href="https://open.spotify.com/artist/7yrMpBiF2ai2BlWADFKHmU">Spotify</a> /
+    <a href="https://itunes.apple.com/us/artist/superfeel/1223520586">Apple Music</a> /
+    <a href="https://www.soundcloud.com/realsuperfeel">Soundcloud</a> /
+    <a href="https://www.instagram.com/realsuperfeel">Instagram</a> /
+    <a href="https://www.facebook.com/realsuperfeel">Facebook</a> /
+    <a href="https://www.twitter.com/realsuperfeel">Twitter</a>
+  </footer>
+
 </div>
 {% endblock %}
