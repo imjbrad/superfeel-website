@@ -5,7 +5,7 @@ function IndexView(req, res) {
 
   var context = {
     title: 'Superfeel | Official Website of Superfeel',
-    description: 'Superfeel is an emerging Brooklyn duo comprised of Jordan Bradley and Androu Boudreau. They’ve been named one of Milk Studio’s 2018 artists to watch',
+    description: 'Superfeel is an emerging Brooklyn duo comprised of Jordan Bradley and Androu Boudreau. They’ve been named one of Milk Studios\' 2018 artists to watch',
     image: 'http://www.isuperfeelyou.com/images/site_image.jpg',
     profiles: {
       facebook: "https://www.facebook.com/realsuperfeel",
