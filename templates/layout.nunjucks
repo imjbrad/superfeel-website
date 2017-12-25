@@ -43,9 +43,20 @@
   {
     "@context": "http://schema.org",
     "@type": "MusicGroup",
-    "url": "http://www.smarturl.it/superfeel",
+    "url": "http://www.isuperfeelyou.com",
     "name": "Superfeel",
-    "sameAs": "http://www.isuperfeelyou.com",
+    "genre": "Pop",
+    "image": [
+      "https://instagram.fphl2-2.fna.fbcdn.net/t51.2885-15/e35/25010765_192503997967213_8782275957797945344_n.jpg",
+      "https://instagram.fphl2-2.fna.fbcdn.net/t51.2885-15/s750x750/sh0.08/e35/22500521_177366539505925_7465966561447116800_n.jpg",
+      "https://instagram.fphl2-2.fna.fbcdn.net/t51.2885-15/s640x640/sh0.08/e35/24177777_500094970389992_1685911711791448064_n.jpg"
+     ],
+    "sameAs": [
+      "{{ profiles.facebook }}",
+      "{{ profiles.instagram }}",
+      "{{ profiles.soundcloud }}",
+      "{{ profiles.twitter }}"
+    ],
     "description": "{{ description }}"
   }
 </script>

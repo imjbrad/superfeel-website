@@ -16,12 +16,12 @@
   </div>
 
   <footer>
-    <a href="https://open.spotify.com/artist/7yrMpBiF2ai2BlWADFKHmU">Spotify</a> /
-    <a href="https://itunes.apple.com/us/artist/superfeel/1223520586">Apple Music</a> /
-    <a href="https://www.soundcloud.com/realsuperfeel">Soundcloud</a> /
-    <a href="https://www.instagram.com/realsuperfeel">Instagram</a> /
-    <a href="https://www.facebook.com/realsuperfeel">Facebook</a> /
-    <a href="https://www.twitter.com/realsuperfeel">Twitter</a>
+    <a href="{{ profiles.spotify }}">Spotify</a> /
+    <a href="{{ profiles.appleMusic }}">Apple Music</a> /
+    <a href="{{ profiles.soundcloud }}">Soundcloud</a> /
+    <a href="{{ profiles.instagram }}">Instagram</a> /
+    <a href="{{ profiles.facebook }}">Facebook</a> /
+    <a href="{{ profiles.twitter }}">Twitter</a>
   </footer>
 
 </div>
