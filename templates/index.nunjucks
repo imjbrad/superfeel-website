@@ -1,9 +1,7 @@
 {% extends 'layout.nunjucks' %}
 
 {% block content %}
-<div class="background-video">
-  <video src="/images/bg_video.mp4" loop autoplay></video>
-</div>
+<div class="background-video"></div>
 
 <div class="content-wrapper">
 

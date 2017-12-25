@@ -62,7 +62,10 @@ html, body {
   position: absolute;
   overflow: hidden;
   top: 0;
-  left: 0; }
+  left: 0;
+  background: url(/images/bg_video_25.gif);
+  background-position: center;
+  background-size: cover; }
   .background-video video {
     min-width: 100%;
     min-height: 100%;
