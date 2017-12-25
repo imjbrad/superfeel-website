@@ -114,9 +114,11 @@ html, body {
 
 footer {
   position: absolute;
+  left: 0;
   bottom: 2em;
   color: white;
-  opacity: .1; }
+  opacity: .1;
+  text-align: center; }
   footer a {
     font: inherit;
     color: inherit;
