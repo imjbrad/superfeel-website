@@ -57,7 +57,37 @@
       "{{ profiles.soundcloud }}",
       "{{ profiles.twitter }}"
     ],
-    "description": "{{ description }}"
+    "description": "{{ description }}",
+    "potentialAction": {
+      "@type": "ListenAction",
+      "target": [
+        {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://open.spotify.com/artist/7yrMpBiF2ai2BlWADFKHmU?autoplay=true",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ],
+          "InLanguage": "USD"
+        },
+        {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://geo.itunes.apple.com/us/artist/superfeel/1223520586?mt=1&app=music",
+          "actionPlatform": "http://schema.org/IOSPlatform",
+          "InLanguage": "USD"
+        }
+      ],
+      "expectsAcceptanceOf": {
+        "@type": "Offer",
+        "eligibleRegion": [
+          {
+            "@type": "Country",
+            "name": "US"
+          }
+        ]
+      }
+    }
   }
 </script>
 

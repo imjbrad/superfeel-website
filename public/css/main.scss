@@ -68,18 +68,17 @@ html, body {
   flex-direction: column;
 }
 
-.centered {
-  width: 80%;
-  max-width: 500px;
-}
+.centered {  }
 
 .logo {
-  width: 100%;
+  width: 38rem;
+  margin: auto;
   height: auto;
+  display: block;
 }
 
 .links {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   margin-top: 1.8em;
   color: white;
   text-align: center;
@@ -106,7 +105,7 @@ html, body {
 footer {
   position: absolute;
   left: 0;
-  bottom: 2em;
+  bottom: 2rem;
   width: 100%;
   color: white;
   opacity: .1;
